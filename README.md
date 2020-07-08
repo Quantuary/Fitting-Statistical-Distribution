@@ -9,7 +9,7 @@ by comparing the sum-of-square-error (SSE) made between the fitted pdf and the h
 * [Initialising](#initialising)
 * [Functions](#functions)
     * [1. compare](#1-compare)
-    * [2. make_pdf](#2-make-pdf)
+    * [2. make_pdf](#2-make_pdf)
 
 
 ## Initialising
