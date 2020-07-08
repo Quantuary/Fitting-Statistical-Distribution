@@ -8,7 +8,7 @@ by comparing the sum-of-square-error (SSE) made between the fitted pdf and the h
     
 * [Initialising](#initialising)
 * [Functions](#functions)
-    * [1. compre](#1-compare)
+    * [1. compare](#1-compare)
     * [2. make_pdf](#2-make-pdf)
 
 
@@ -38,7 +38,7 @@ The parameter `dist_name` takes a list of distributions' name. <br>
 For example, to compare between **exponential** distribution and **gamma** distribution do the following:<br>
 `best_fit_name, best_fit_params = cls_obj.compare(dist=['expon','gamma'])`<br>
 
-The best fitted distribution and its corresponding parameter is returned.
+A best fitted distribution and its corresponding parameter is returned.
 A comparison graph will be generated in the process.
 <p align="center">
   <img src="resource/compare.png">
@@ -74,8 +74,8 @@ We can utilised the result returned from step 1 in the example below, such as `b
 import scipy as st
 best_dist = getattr(st, best_fit_name)
 pdf = cls_obj.make_pdf(best_dist, best_fit_params)
-
 ```
+
 `pdf` is a data series that can be plotted using matplotlib.
 ```
 import matplotlib.pyplot as plt
