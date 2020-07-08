@@ -103,6 +103,7 @@ param_names = (best_dist.shapes + ', loc, scale').split(', ') if best_dist.shape
 param_str = ', '.join(['{}={:0.2f}'.format(k,v) for k,v in zip(param_names, best_fit_params)])
 dist_str = '{}({})'.format(best_fit_name, param_str)
 ```
+</p>
 </details>
 
 
