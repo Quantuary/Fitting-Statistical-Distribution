@@ -66,7 +66,7 @@ dist_name = [
 
 ### 2. make_pdf 
 `make_pdf(dist, params)` is used to generate data point from the chosen pdf.
-Parameter `dist` take a scipy object, and `best_fit_params` is the parameter that corresponds to the respective distribution.
+Parameter `dist` take a `scipy.stats` object, and `best_fit_params` is the parameter that corresponds to the respective distribution.
 
 We can utilised the result returned from step 1 in the example below, such as `best_fit_name` and `best_fit_params`:
 
