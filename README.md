@@ -105,8 +105,7 @@ dist_str = '{}({})'.format(best_fit_name, param_str)
 ```
 </details>
 
-
-
+<summary>other graph setting</summary>
 
 <details>
     <summary>other graph setting</summary>
