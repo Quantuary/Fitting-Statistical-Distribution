@@ -93,11 +93,12 @@ ax = pdf.plot(lw=1, label='PDF', legend=True)
 
 <details>
     <summary>other statistical properties</summary>
-```
-find all moment
+    <p>
+```python
+#find all moment
 mean, var, skew, kurt=best_dist.stats(*best_fit_params,moments='mvsk')
 
-Put all parameter into a string
+#Put all parameter into a string
 param_names = (best_dist.shapes + ', loc, scale').split(', ') if best_dist.shapes else ['loc', 'scale']
 param_str = ', '.join(['{}={:0.2f}'.format(k,v) for k,v in zip(param_names, best_fit_params)])
 dist_str = '{}({})'.format(best_fit_name, param_str)
