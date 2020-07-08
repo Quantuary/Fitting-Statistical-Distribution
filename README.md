@@ -94,7 +94,7 @@ ax = pdf.plot(lw=1, label='PDF', legend=True)
 <details>
     <summary>other statistical properties</summary>
     <p>
-```python
+```
 #find all moment
 mean, var, skew, kurt=best_dist.stats(*best_fit_params,moments='mvsk')
 
