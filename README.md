@@ -94,36 +94,15 @@ ax = pdf.plot(lw=1, label='PDF', legend=True)
 <details>
     <summary>other statistical properties</summary>
 ```
-#find all moment
+find all moment
 mean, var, skew, kurt=best_dist.stats(*best_fit_params,moments='mvsk')
 
-#Put all parameter into a string
+Put all parameter into a string
 param_names = (best_dist.shapes + ', loc, scale').split(', ') if best_dist.shapes else ['loc', 'scale']
 param_str = ', '.join(['{}={:0.2f}'.format(k,v) for k,v in zip(param_names, best_fit_params)])
 dist_str = '{}({})'.format(best_fit_name, param_str)
 ```
 </details>
-<br>
-<details>
-    <summary>other graph setting</summary>
-```
-#plot histogram
-cls_obj.data.plot(kind='hist', bins=250, density=True, alpha=0.5, label='Data', legend=True, ax=ax)
-#draw line to represent mean
-plt.axvline(mean,linestyle="--",color='r')
-
-#chart title and axis title
-ax.set_title('%s \n %s \n mean = %s' %(cls_obj.name, dist_str, np.round(mean,4) ))
-ax.xaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('${x:,.0f}'))
-ax.set_xlabel('$AUD')
-ax.set_ylabel('Probability')
-
-set y limit
-dataYLim = ax.get_ylim()
-ax.set_ylim(dataYLim)
-plt.show()
-```
-</details>  
 
 
 ## 
