@@ -119,7 +119,7 @@ ax.xaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('${x:,.0f}'))
 ax.set_xlabel('$AUD')
 ax.set_ylabel('Probability')
 
-set y limit
+#set y limit
 dataYLim = ax.get_ylim()
 ax.set_ylim(dataYLim)
 plt.show()
