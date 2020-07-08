@@ -91,7 +91,6 @@ ax = pdf.plot(lw=1, label='PDF', legend=True)
 ```
 
 
-
 <details>
     <summary>other statistical properties</summary>
 ```
@@ -104,9 +103,7 @@ param_str = ', '.join(['{}={:0.2f}'.format(k,v) for k,v in zip(param_names, best
 dist_str = '{}({})'.format(best_fit_name, param_str)
 ```
 </details>
-
-<summary>other graph setting</summary>
-
+<br>
 <details>
     <summary>other graph setting</summary>
 ```
@@ -121,7 +118,7 @@ ax.xaxis.set_major_formatter(matplotlib.ticker.StrMethodFormatter('${x:,.0f}'))
 ax.set_xlabel('$AUD')
 ax.set_ylabel('Probability')
 
-#set y limit
+set y limit
 dataYLim = ax.get_ylim()
 ax.set_ylim(dataYLim)
 plt.show()
