@@ -36,7 +36,7 @@ This module contained **two** funnctions:<br>
 The parameter `dist_name` takes a list of distributions' name. <br>
 
 For example, to compare between **exponential** distribution and **gamma** distribution do the following:<br>
-`best_fit_name, best_fit_params = cls_obj.compare(dist=['expon','gamma'])`<br>
+`best_fit_name, best_fit_params = cls_obj.compare(dist_name=['expon','gamma'])`<br>
 
 A best fitted distribution and its corresponding parameter is returned.
 A comparison graph will be generated in the process.
